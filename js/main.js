@@ -125,9 +125,22 @@ resetRestaurants = (restaurants) => {
  * Create all restaurants HTML and add them to the webpage.
  */
 fillRestaurantsHTML = (restaurants = self.restaurants) => {
-  const ul = document.getElementById('restaurants-list');
-  restaurants.forEach(restaurant => {
-    ul.append(createRestaurantHTML(restaurant));
+  const list = document.getElementById('restaurants-list');
+
+  let divRow = document.createElement('div');
+  divRow.className = 'row';
+
+  restaurants.forEach( (restaurant, index) => {
+    divRow.append(createRestaurantHTML(restaurant));
+
+    if (divRow.childElementCount === 3) {
+      // Append existing row to restaurant list
+      list.append(divRow);
+
+      // Create new row to append columns
+      divRow = document.createElement('div');
+      divRow.className = 'row';
+    }
   });
   addMarkersToMap();
 }
@@ -136,16 +149,8 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
  * Create restaurant HTML.
  */
 createRestaurantHTML = (restaurant) => {
-  const li = document.createElement('li');
-
-  const divRow = document.createElement('div');
-  divRow.className = 'row';
-
   const divColumn = document.createElement('div');
-  divColumn.className = 'col six';
-
-  li.append(divRow);
-  divRow.append(divColumn);
+  divColumn.className = 'col four';
 
   const image = document.createElement('img');
   image.className = 'restaurant-img';
@@ -169,7 +174,7 @@ createRestaurantHTML = (restaurant) => {
   more.href = DBHelper.urlForRestaurant(restaurant);
   divColumn.append(more);
 
-  return li
+  return divColumn;
 }
 
 /**
