@@ -15,7 +15,7 @@ body {
 }
 
 .row {
-    padding: 20px;
+    /* padding: 20px; */
     width: 100%;
     min-height: 1px;
     float: left;
@@ -32,7 +32,7 @@ body {
     border-radius: 8px;
     margin-left: 2.4%;
     margin-right: 2.4%;
-    display: inline-block;
+    /* display: inline-block; */
     float: left;
 }
 
