@@ -17,11 +17,13 @@ ul, li {
 	font-size: 10pt;
 	color: #333;
 }
-a {
+
+#maincontent a {
 	color: orange;
 	text-decoration: none;
 }
-a:hover, a:focus {
+
+#maincontent a:hover, a:focus {
 	color: #3397db;
 	text-decoration: none;
 }
@@ -55,16 +57,26 @@ nav {
   background-color: #252831;
   text-align:center;
 }
-nav h1 {
+nav .page-title {
   margin: auto;
-}
-nav h1 a {
-  color: #fff;
-  font-size: 14pt;
   font-weight: 200;
   letter-spacing: 10px;
   text-transform: uppercase;
+  padding-top: 25px;
 }
+
+nav .page-title a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+@media (min-width: 500px) {
+  nav .page-title a {
+    font-size: 18px;
+  }
+}
+
 #breadcrumb {
     padding: 10px 40px 16px;
     list-style: none;
