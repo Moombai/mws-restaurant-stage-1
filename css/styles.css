@@ -50,6 +50,16 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   text-align: center;
   text-transform: uppercase;
 }
+
+#footer a {
+  text-decoration: none;
+  color: #FF8C00;
+}
+
+#footer a:hover {
+  text-decoration: underline;
+}
+
 /* ====================== Navigation ====================== */
 nav {
   width: 100%;
@@ -173,21 +183,18 @@ nav .page-title a {
   text-align: center;
 }
 
-/* #restaurants-list li {
-  background-color: #fff;
-  border: 2px solid #ccc;
-  font-family: Arial,sans-serif;
-  margin: 15px;
-  min-height: 380px;
-  padding: 0 30px 25px;
-  text-align: left;
-  width: 270px;
-} */
+#restaurants-list .summary-block {
+  background-color: rgb(243, 243, 243);
+  margin-bottom: 35px;
+  /* https://www.w3schools.com/css/css3_shadows.asp */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 0;
+}
 
 #restaurants-list .restaurant-img {
   background-color: #ccc;
   display: block;
-  margin: 0;
+  margin-bottom: 5px;
   max-width: 100%;
   min-height: 248px;
   min-width: 100%;
@@ -206,17 +213,24 @@ nav .page-title a {
   margin: 0;
   font-size: 11pt;
 }
-#restaurants-list li a {
-  background-color: orange;
-  border-bottom: 3px solid #eee;
+#restaurants-list a {
+  background-color: #FF8C00;
+  border: 1px solid #eee;
+  border-radius: 3px;
   color: #fff;
   display: inline-block;
   font-size: 10pt;
-  margin: 15px 0 0;
+  margin: 15px 0;
   padding: 8px 30px 10px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+#restaurants-list a:hover {
+  background-color: #fff;
+  color: #FF8C00;
+  border: 1px solid #FF8C00;
 }
 
 /* ====================== Restaurant Details ====================== */
