@@ -175,6 +175,13 @@ nav .page-title a {
 }
 
 /* ====================== Restaurant Listing ====================== */
+.restaurant-summary h2 {
+  padding-top: 20px;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 30px;
+}
+
 #restaurants-list {
   /* background-color: #f3f3f3; */
   list-style: outside none none;
@@ -189,6 +196,16 @@ nav .page-title a {
   /* https://www.w3schools.com/css/css3_shadows.asp */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 0;
+}
+
+@media (max-width: 500px) {
+  #restaurants-list .summary-block {
+    border: 0;
+    -webkit-box-shadow: none;
+	  -moz-box-shadow: none;
+    box-shadow: none;
+    background-color: #fdfdfd;;
+  }
 }
 
 #restaurants-list .restaurant-img {

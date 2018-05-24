@@ -170,7 +170,7 @@ createRestaurantHTML = (restaurant) => {
   divColumn.append(address);
 
   const more = document.createElement('a');
-  more.innerHTML = 'View Details';
+  more.innerHTML = 'View Review';
   more.href = DBHelper.urlForRestaurant(restaurant);
   divColumn.append(more);
 
