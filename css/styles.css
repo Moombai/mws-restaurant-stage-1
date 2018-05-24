@@ -116,12 +116,31 @@ nav .page-title a {
   background-color: #ccc;
 }
 /* ====================== Restaurant Filtering ====================== */
+.filter-wrapper {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+@media (max-width: 635px) {
+  #cuisines-select {
+    margin-left: 52px;
+  }
+}
+
 .filter-options {
   width: 100%;
   background-color: #333;
   align-items: center;
   position: relative;
 }
+
+.filter-wrapper .dropdown-menu {
+  display: inline-block;
+}
+
+
 .filter-options h2 {
   color: white;
   font-size: 1rem;
@@ -136,19 +155,13 @@ nav .page-title a {
   border: 1px solid #fff;
   font-size: 11pt;
   letter-spacing: 0;
-  margin: 10px;
+  margin: 13px 10px;
   width: 155px;
 }
 
 .filter-options label {
   color: white;
   font-size: 11pt;
-}
-
-.filter-wrap {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* ====================== Restaurant Listing ====================== */
