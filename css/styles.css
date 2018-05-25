@@ -307,6 +307,12 @@ nav .page-title a {
   text-transform: uppercase;
 }
 
+#reviews-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+
 #reviews-container h2 {
   color: #f58500;
   font-size: 24pt;
@@ -323,14 +329,35 @@ nav .page-title a {
     border: 2px solid #f3f3f3;
   display: block;
   list-style-type: none;
-  margin: 0 0 30px;
+  margin-bottom: 30px;
   overflow: hidden;
   padding: 0 20px 20px;
   position: relative;
-  width: 85%;
 }
 #reviews-list li p {
   margin: 0 0 10px;
+}
+
+#reviews-list .review-name, .review-date {
+  display: inline-block;
+}
+
+#reviews-list .review-name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#reviews-list .review-date {
+  float: right;
+}
+
+#reviews-list  .review-header {
+  background: #252831;
+  padding-top: 10px;
+}
+
+#reviews-list .review-header p {
+  color: #eee;
 }
 
 /* ========= Restaurant Opening Hours Table ========== */
@@ -339,8 +366,8 @@ nav .page-title a {
   border: 1px solid #d5d5d5;
   border-width: 1px 0;
   width: 100%;
-  max-width: 500px;
-  margin-bottom: 15px;
+  /* max-width: 500px; */
+  margin-bottom: 30px;
 }
 
 #restaurant-hours td {
@@ -354,3 +381,9 @@ nav .page-title a {
 .restaurant-hours-title {
   margin: 0 0 5px 0;
 }
+
+.restaurant-details-container {
+  width: 85%;
+  margin: 0 auto;
+}
+
