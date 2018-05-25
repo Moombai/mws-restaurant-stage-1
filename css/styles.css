@@ -326,12 +326,12 @@ nav .page-title a {
 }
 #reviews-list li {
   background-color: #fff;
-    border: 2px solid #f3f3f3;
+  border: 2px solid #f3f3f3;
   display: block;
   list-style-type: none;
   margin-bottom: 30px;
   overflow: hidden;
-  padding: 0 20px 20px;
+  padding-bottom: 20px;
   position: relative;
 }
 #reviews-list li p {
@@ -353,11 +353,25 @@ nav .page-title a {
 
 #reviews-list  .review-header {
   background: #252831;
+  padding-right: 25px;
+  padding-left: 25px;
   padding-top: 10px;
 }
 
 #reviews-list .review-header p {
   color: #eee;
+}
+
+#reviews-list .review-content {
+  padding: 25px 25px 10px 25px;
+}
+
+#reviews-list .review-rating {
+  display: inline-block;
+  background: #f58500;
+  color: white;
+  font-weight: 600;
+  padding: 3px 10px;
 }
 
 /* ========= Restaurant Opening Hours Table ========== */
