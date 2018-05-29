@@ -261,8 +261,11 @@ nav .page-title a {
   z-index: 9;
 }
 
-.main-content-details {
+.main-content-section {
   padding-top: 131px; /* To offset the fixed header height */
+}
+
+.details-wrapper {
   padding-left: 5px;
   padding-right: 5px;
 }
