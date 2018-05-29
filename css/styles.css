@@ -8,7 +8,7 @@ body,td,th,p{
 	line-height: 1.5;
 }
 body {
-	background-color: #fdfdfd;
+	background-color: #fbfbfb;
 	margin: 0;
 }
 ul, li {
@@ -278,6 +278,12 @@ nav .page-title a {
 
 .details-map-container {
   height: 250px;
+}
+
+@media (min-width: 768px) {
+  .details-map-container {
+    height: 100%;
+  }
 }
 
 #restaurant-name {
