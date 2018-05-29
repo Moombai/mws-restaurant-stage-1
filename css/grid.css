@@ -63,3 +63,11 @@ body {
         margin: 5px 0;
     }
 }
+
+/* Apply row reverse on mobile in order to show map on the right in desktop view */
+@media (min-width: 768px) {
+    .col-reverse {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
