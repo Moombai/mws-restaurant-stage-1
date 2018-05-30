@@ -151,10 +151,10 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
 createRestaurantHTML = (restaurant) => {
   const divColumn = document.createElement('div');
   divColumn.className = 'col four summary-block';
-
   const image = document.createElement('img');
   image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
+  image.alt = DBHelper.imageSupportTextForRestaurant(restaurant);
   divColumn.append(image);
 
   const name = document.createElement('h1');
